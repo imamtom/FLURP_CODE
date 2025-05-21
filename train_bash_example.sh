@@ -1,0 +1,3 @@
+python main.py --dataset AGNews --attack_method IPM-01 --defense_method FedAvg --num_clients 10 --iid True --local_learning_rate 0.1 --global_rounds 30 --batch_size 128 --local_epochs 1 --alpha 0.1 --given_size 4096 --gpu_id 0
+
+python main.py --dataset ImageNet12 --attack_method IPM-100 --defense_method AlignSample --num_clients 20 --iid True --local_learning_rate 0.1 --global_rounds 30 --batch_size 128 --local_epochs 3 --alpha 1 --given_size 4096 --gpu_id 1
